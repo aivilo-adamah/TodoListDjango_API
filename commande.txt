@@ -1,0 +1,11 @@
+ngrok config add-authtoken TOKEN
+
+ngrok http 8000
+
+ngrok http 8000 --basic-auth 'ngrok:issecure'
+ngrok http 8000 --oauth google
+
+
+pour arreter la session
+
+tskill /A ngrok
